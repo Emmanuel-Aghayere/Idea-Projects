@@ -1,0 +1,71 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.StackPane?>
+
+<!--<StackPane fx:controller="sample.Controller"
+           xmlns:fx="http://javafx.com/fxml" >
+    <Button text="Button one" style = "-fx-background-color:red"/>
+    <Label text = "Our Label" style = "-fx-background-color:blue"/>
+    <Label text = "Our very long Label" style = "-fx-background-color:green"/>
+
+
+</StackPane>-->
+<!--
+<TilePane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" >
+    <Button text = "Button one"/>
+    <Button text = "Button two"/>
+    <Button text = "Button three"/>
+    <Button text = "Button four"/>
+    <Button text = "Button five"/>
+    <Button text = "Button six"/>
+    <Button text = "Button seven"/>
+    <Button text = "Button eight"/>
+    <Button text = "Button nine"/>
+    <Button text = "Button ten"/>
+    <Button text = "Button eleven"/>
+
+</TilePane>-->
+
+ <BorderPane fx:controller="sample.Controller"
+            xmlns:fx="http://javafx.com/fxml">
+    <top>
+        <Label text = "Our label at the top region" BorderPane.alignment="center"
+        style = "-fx-border-color:purple; -fx-border-width: 3;-fx-border-style: dashed"/>
+    </top>
+    <left>
+        <Label text="Our label at the left region"/>
+
+    </left>
+    <right>
+        <Label text = "Our label at the right region"/>
+    </right>
+    <center>
+        <Label text="Our very very very very long label at the center region"/>
+    </center>
+    <bottom>
+        <HBox spacing ="10" alignment="CENTER_RIGHT">
+            <padding>
+                <Insets right="10" bottom="10" left="10" top="10"/>
+            </padding>
+
+
+            <Button text="Okay" prefWidth="90"/>
+            <Button text="Cancel" prefWidth="90"/>
+            <Button text="Help" prefWidth="90"/>
+
+        </HBox>
+
+    </bottom>
+
+
+</BorderPane>
